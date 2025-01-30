@@ -1,4 +1,11 @@
 {
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "deploy": "NODE_ENV=production npm run build && gh-pages -d dist"
+  },
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
@@ -17,7 +24,6 @@
   "dependencies": {
     "date-fns": "^4.1.0"
   },
-  "scripts": {
-    "build": "webpack --mode production"
-  }
+  "homepage": "https://udaydocs.github.io/To-Do-List/"
+  
 }
